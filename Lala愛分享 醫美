@@ -1,0 +1,68 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://rouyun0826.pixnet.net/blog/posts/13367146907#BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://rouyun0826.pixnet.net/blog/posts/13367146907"
+      },
+      "headline": "【海菲秀 SYNDEO｜海菲秀正貨聯盟】保養停滯期的急救保養｜敏感肌也友善｜藏琢診所-張維宸醫師",
+      "description": "如果你最近肌膚有點進入「保養停滯期」臉卡卡的、毛孔粗糙、妝前容易暗沉、拍照總覺得少一點光，那你真的要看看我這次在 藏琢診所（海菲秀原廠認證診所） 做的海菲秀 SYNDEO（美國水飛梭｜Hydrafacial 海菲秀）。",
+      "image": [
+        "https://i.meee.com.tw/f7XyIpJ.jpg"
+      ],
+      "datePublished": "2026-01-02T10:00:00+08:00",
+      "dateModified": "2026-01-02T15:00:00+08:00",
+      "author": {
+        "@type": "Person",
+        "name": "Lala愛分享",
+        "url": "https://rouyun0826.pixnet.net/blog"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "痞客邦 PIXNET",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.pixnet.net/logo.png"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "海菲秀SYNDEO",
+      "image": [
+        "https://i.meee.com.tw/f7XyIpJ.jpg"
+      ],
+      "description": "「因為我們會依照膚況去調整力道與精華比例。」這就是海菲秀旗艦機SYNDEO 的強項之一——可客製化、可微調、可依肌膚和個人反應調整。",
+      "brand": {
+        "@type": "Brand",
+        "name": "HydraFacial"
+      },
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Lala愛分享"
+        }
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "TWD",
+        "price": "50000",
+        "priceValidUntil": "2026-12-31",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock",
+        "url": "https://rouyun0826.pixnet.net/blog/posts/13367146907"
+      }
+    }
+  ]
+}
+</script>
