@@ -1,0 +1,606 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.3">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Courier New'; color: #6d6d6d; -webkit-text-stroke: #6d6d6d; background-color: #ecf1f7}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Courier New'; color: #0000ff; -webkit-text-stroke: #0000ff; background-color: #ecf1f7}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Courier New'; color: #6b0001; -webkit-text-stroke: #6b0001; background-color: #ecf1f7}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Courier New'; color: #2a2a2a; -webkit-text-stroke: #2a2a2a; background-color: #ecf1f7}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Courier New'; color: #fb0007; -webkit-text-stroke: #fb0007; background-color: #ecf1f7}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.7px Arial; -webkit-text-stroke: #000000; background-color: #ecf1f7; min-height: 16.0px}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Courier New'; color: #4d5055; -webkit-text-stroke: #4d5055; background-color: #ecf1f7}
+    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Courier New'; color: #18702b; -webkit-text-stroke: #18702b; background-color: #ecf1f7}
+    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Courier New'; color: #0e6e6d; -webkit-text-stroke: #0e6e6d; background-color: #ecf1f7}
+    span.s1 {font-kerning: none}
+    span.s2 {font-kerning: none; color: #fb0007; -webkit-text-stroke: 0px #fb0007}
+    span.s3 {font-kerning: none; color: #2a2a2a; -webkit-text-stroke: 0px #2a2a2a}
+    span.s4 {font-kerning: none; color: #6b0001; -webkit-text-stroke: 0px #6b0001}
+    span.s5 {font-kerning: none; color: #0000ff; -webkit-text-stroke: 0px #0000ff}
+    span.s6 {font-kerning: none; color: #137646; -webkit-text-stroke: 0px #137646}
+    span.s7 {font-kerning: none; color: #093c94; -webkit-text-stroke: 0px #093c94}
+    span.s8 {font-kerning: none; color: #4d5055; -webkit-text-stroke: 0px #4d5055}
+    span.s9 {font-kerning: none; color: #6f0ec3; -webkit-text-stroke: 0px #6f0ec3}
+    span.s10 {font-kerning: none; color: #18702b; -webkit-text-stroke: 0px #18702b}
+    span.s11 {font-kerning: none; color: #0e6e6d; -webkit-text-stroke: 0px #0e6e6d}
+    span.s12 {font-kerning: none; color: #a4450b; -webkit-text-stroke: 0px #a4450b}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE</span><span class="s2"> html</span><span class="s1">&gt;</span></p>
+<p class="p2"><span class="s3">&lt;</span><span class="s4">html</span><span class="s3"> </span><span class="s2">lang</span><span class="s3">=</span><span class="s1">"zh-TW"</span><span class="s3">&gt;</span></p>
+<p class="p3"><span class="s3">&lt;</span><span class="s1">head</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s1">    &lt;</span><span class="s4">meta</span><span class="s1"> </span><span class="s2">charset</span><span class="s1">=</span><span class="s5">"UTF-8"</span><span class="s1">&gt;</span></p>
+<p class="p2"><span class="s3">    &lt;</span><span class="s4">meta</span><span class="s3"> </span><span class="s2">name</span><span class="s3">=</span><span class="s1">"viewport"</span><span class="s3"> </span><span class="s2">content</span><span class="s3">=</span><span class="s1">"width=device-width, initial-scale=1.0"</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s1">    &lt;</span><span class="s4">title</span><span class="s1">&gt;「觀點LAB」提示詞資料庫 V1&lt;/</span><span class="s4">title</span><span class="s1">&gt;</span></p>
+<p class="p2"><span class="s3">    &lt;</span><span class="s4">script</span><span class="s3"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"https://cdn.tailwindcss.com"</span><span class="s3">&gt;&lt;/</span><span class="s4">script</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s3">    &lt;</span><span class="s4">script</span><span class="s3"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"https://unpkg.com/lucide@latest"</span><span class="s3">&gt;&lt;/</span><span class="s4">script</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s1">    &lt;</span><span class="s4">style</span><span class="s1">&gt;</span></p>
+<p class="p3"><span class="s3">        </span><span class="s1">.scrollbar-thin::-webkit-scrollbar</span><span class="s3"> { </span><span class="s2">width:</span><span class="s3"> </span><span class="s6">6px</span><span class="s3">; </span><span class="s2">height:</span><span class="s3"> </span><span class="s6">6px</span><span class="s3">; }</span></p>
+<p class="p3"><span class="s3">        </span><span class="s1">.scrollbar-thin::-webkit-scrollbar-track</span><span class="s3"> { </span><span class="s2">background:</span><span class="s3"> </span><span class="s7">transparent</span><span class="s3">; }</span></p>
+<p class="p3"><span class="s3">        </span><span class="s1">.scrollbar-thin::-webkit-scrollbar-thumb</span><span class="s3"> { </span><span class="s2">background:</span><span class="s3"> </span><span class="s7">#e2e8f0</span><span class="s3">; </span><span class="s2">border-radius:</span><span class="s3"> </span><span class="s6">10px</span><span class="s3">; }</span></p>
+<p class="p3"><span class="s3">        </span><span class="s1">.dark-scrollbar::-webkit-scrollbar-thumb</span><span class="s3"> { </span><span class="s2">background:</span><span class="s3"> </span><span class="s7">#334155</span><span class="s3">; }</span></p>
+<p class="p4"><span class="s1">       </span></p>
+<p class="p5"><span class="s3">        </span><span class="s4">#resizer:hover</span><span class="s3"> { </span><span class="s1">background-color:</span><span class="s3"> </span><span class="s7">#818cf8</span><span class="s3">; }</span></p>
+<p class="p3"><span class="s3">        </span><span class="s1">.selection-btn.active</span><span class="s3"> {</span></p>
+<p class="p4"><span class="s1">            </span><span class="s2">border-color:</span><span class="s1"> </span><span class="s7">#6366f1</span><span class="s1">;</span></p>
+<p class="p5"><span class="s3">            </span><span class="s1">background-color:</span><span class="s3"> </span><span class="s7">#eef2ff</span><span class="s3">;</span></p>
+<p class="p4"><span class="s1">            </span><span class="s2">color:</span><span class="s1"> </span><span class="s7">#4338ca</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">            </span><span class="s2">font-weight:</span><span class="s1"> </span><span class="s7">bold</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">            </span><span class="s2">box-shadow:</span><span class="s1"> </span><span class="s6">0</span><span class="s1"> </span><span class="s6">1px</span><span class="s1"> </span><span class="s6">2px</span><span class="s1"> </span><span class="s6">0</span><span class="s1"> </span><span class="s7">rgba(</span><span class="s6">0</span><span class="s1">, </span><span class="s6">0</span><span class="s1">, </span><span class="s6">0</span><span class="s1">, </span><span class="s6">0.05</span><span class="s7">)</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">        }</span></p>
+<p class="p4"><span class="s1">    &lt;/</span><span class="s4">style</span><span class="s1">&gt;</span></p>
+<p class="p3"><span class="s3">&lt;/</span><span class="s1">head</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s3">&lt;</span><span class="s4">body</span><span class="s3"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"h-screen bg-slate-100 flex flex-col font-sans text-slate-900 overflow-hidden"</span><span class="s3">&gt;</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p7"><span class="s3">    </span><span class="s1">&lt;!-- Header --&gt;</span></p>
+<p class="p2"><span class="s3">    &lt;</span><span class="s4">header</span><span class="s3"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"shrink-0 p-3 border-b border-slate-200 bg-white z-10 shadow-sm"</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s3">        &lt;</span><span class="s4">div</span><span class="s3"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"max-w-full mx-auto flex items-center justify-between"</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s3">            &lt;</span><span class="s4">h1</span><span class="s3"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-lg font-black text-slate-800 flex items-center gap-2"</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s3">                &lt;</span><span class="s4">span</span><span class="s3"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"bg-indigo-600 text-white px-1.5 py-0.5 rounded text-xs tracking-tighter shadow-sm"</span><span class="s3">&gt;P.L.&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s3">                「觀點LAB」提示詞資料庫 &lt;</span><span class="s4">span</span><span class="s3"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-[10px] text-slate-400 font-normal uppercase"</span><span class="s3">&gt;V1&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s1">            &lt;/</span><span class="s4">h1</span><span class="s1">&gt;</span></p>
+<p class="p2"><span class="s3">            &lt;</span><span class="s4">div</span><span class="s3"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex items-center gap-2"</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s3">                &lt;</span><span class="s4">button</span><span class="s3"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"reset-all-btn"</span><span class="s3"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-[10px] font-bold text-red-500 hover:text-red-700 border border-red-100 bg-red-50 px-3 py-1 rounded transition-all active:scale-95 uppercase tracking-tighter flex items-center gap-1"</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s1">                    &lt;</span><span class="s4">i</span><span class="s1"> </span><span class="s2">data-lucide</span><span class="s1">=</span><span class="s5">"x-circle"</span><span class="s1"> </span><span class="s2">class</span><span class="s1">=</span><span class="s5">"w-3 h-3"</span><span class="s1">&gt;&lt;/</span><span class="s4">i</span><span class="s1">&gt; 全部清除</span></p>
+<p class="p4"><span class="s1">                &lt;/</span><span class="s4">button</span><span class="s1">&gt;</span></p>
+<p class="p4"><span class="s1">            &lt;/</span><span class="s4">div</span><span class="s1">&gt;</span></p>
+<p class="p4"><span class="s1">        &lt;/</span><span class="s4">div</span><span class="s1">&gt;</span></p>
+<p class="p4"><span class="s1">    &lt;/</span><span class="s4">header</span><span class="s1">&gt;</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p7"><span class="s3">    </span><span class="s1">&lt;!-- Main Content --&gt;</span></p>
+<p class="p2"><span class="s3">    &lt;</span><span class="s4">main</span><span class="s3"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex-grow flex flex-nowrap overflow-hidden p-3 gap-0"</span><span class="s3"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"container"</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s1">       </span></p>
+<p class="p7"><span class="s3">        </span><span class="s1">&lt;!-- Left Panel: Configuration --&gt;</span></p>
+<p class="p2"><span class="s3">        &lt;</span><span class="s4">div</span><span class="s3"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"left-panel"</span><span class="s3"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"h-full flex flex-col shrink-0 overflow-hidden border border-slate-200 rounded-l-lg bg-white shadow-sm"</span><span class="s3"> </span><span class="s2">style</span><span class="s3">=</span><span class="s1">"flex-basis: 60%;"</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s3">            &lt;</span><span class="s4">div</span><span class="s3"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex-grow overflow-y-auto overflow-x-auto p-3 scrollbar-thin"</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s3">                &lt;</span><span class="s4">div</span><span class="s3"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"min-w-[500px] lg:min-w-0"</span><span class="s3"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"config-sections"</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s1">                   </span></p>
+<p class="p7"><span class="s3">                    </span><span class="s1">&lt;!-- AI Analysis Section --&gt;</span></p>
+<p class="p2"><span class="s3">                    &lt;</span><span class="s4">div</span><span class="s3"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"mb-4 p-3 bg-indigo-50 border border-indigo-100 rounded-lg"</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s3">                        &lt;</span><span class="s4">h3</span><span class="s3"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-[10px] font-bold text-indigo-900 uppercase tracking-tight mb-2 flex items-center gap-2"</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s1">                            &lt;</span><span class="s4">i</span><span class="s1"> </span><span class="s2">data-lucide</span><span class="s1">=</span><span class="s5">"sparkles"</span><span class="s1"> </span><span class="s2">class</span><span class="s1">=</span><span class="s5">"w-3.5 h-3.5 text-indigo-600"</span><span class="s1">&gt;&lt;/</span><span class="s4">i</span><span class="s1">&gt; AI 投影片分析 (NotebookLM PDF 檔案)</span></p>
+<p class="p4"><span class="s1">                        &lt;/</span><span class="s4">h3</span><span class="s1">&gt;</span></p>
+<p class="p4"><span class="s1">                        &lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s2">class</span><span class="s1">=</span><span class="s5">"flex items-center gap-3"</span><span class="s1">&gt;</span></p>
+<p class="p2"><span class="s3">                            &lt;</span><span class="s4">label</span><span class="s3"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex-1 cursor-pointer flex items-center justify-center gap-2 border-2 border-dashed border-indigo-200 bg-white rounded-md p-2 hover:border-indigo-400 transition-all"</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s1">                                &lt;</span><span class="s4">input</span><span class="s1"> </span><span class="s2">type</span><span class="s1">=</span><span class="s5">"file"</span><span class="s1"> </span><span class="s2">id</span><span class="s1">=</span><span class="s5">"file-input"</span><span class="s1"> </span><span class="s2">class</span><span class="s1">=</span><span class="s5">"hidden"</span><span class="s1"> </span><span class="s2">accept</span><span class="s1">=</span><span class="s5">"image/*,.pdf"</span><span class="s1">&gt;</span></p>
+<p class="p2"><span class="s3">                                &lt;</span><span class="s4">div</span><span class="s3"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"file-display"</span><span class="s3"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex items-center gap-2 text-indigo-400"</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s1">                                    &lt;</span><span class="s4">i</span><span class="s1"> </span><span class="s2">data-lucide</span><span class="s1">=</span><span class="s5">"upload"</span><span class="s1"> </span><span class="s2">class</span><span class="s1">=</span><span class="s5">"w-4 h-4"</span><span class="s1">&gt;&lt;/</span><span class="s4">i</span><span class="s1">&gt;</span></p>
+<p class="p4"><span class="s1">                                    &lt;</span><span class="s4">span</span><span class="s1"> </span><span class="s2">class</span><span class="s1">=</span><span class="s5">"text-[10px] font-bold"</span><span class="s1">&gt;上傳 NotebookLM PDF 或截圖檔案&lt;/</span><span class="s4">span</span><span class="s1">&gt;</span></p>
+<p class="p4"><span class="s1">                                &lt;/</span><span class="s4">div</span><span class="s1">&gt;</span></p>
+<p class="p4"><span class="s1">                            &lt;/</span><span class="s4">label</span><span class="s1">&gt;</span></p>
+<p class="p2"><span class="s3">                            &lt;</span><span class="s4">div</span><span class="s3"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex flex-col gap-1 w-32 shrink-0"</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s3">                                &lt;</span><span class="s4">button</span><span class="s3"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"analyze-detailed"</span><span class="s3"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"px-3 py-1.5 rounded-md text-[10px] font-bold flex items-center justify-center gap-1.5 transition-all bg-slate-200 text-slate-400 cursor-not-allowed"</span><span class="s3"> </span><span class="s2">disabled</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s1">                                    &lt;</span><span class="s4">i</span><span class="s1"> </span><span class="s2">data-lucide</span><span class="s1">=</span><span class="s5">"sparkles"</span><span class="s1"> </span><span class="s2">class</span><span class="s1">=</span><span class="s5">"w-3 h-3"</span><span class="s1">&gt;&lt;/</span><span class="s4">i</span><span class="s1">&gt; 一鍵分析風格</span></p>
+<p class="p4"><span class="s1">                                &lt;/</span><span class="s4">button</span><span class="s1">&gt;</span></p>
+<p class="p2"><span class="s3">                                &lt;</span><span class="s4">button</span><span class="s3"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"analyze-concise"</span><span class="s3"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"px-3 py-1.5 rounded-md text-[10px] font-bold flex items-center justify-center gap-1.5 transition-all bg-slate-200 text-slate-400 cursor-not-allowed"</span><span class="s3"> </span><span class="s2">disabled</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s1">                                    &lt;</span><span class="s4">i</span><span class="s1"> </span><span class="s2">data-lucide</span><span class="s1">=</span><span class="s5">"zap"</span><span class="s1"> </span><span class="s2">class</span><span class="s1">=</span><span class="s5">"w-3 h-3"</span><span class="s1">&gt;&lt;/</span><span class="s4">i</span><span class="s1">&gt; 分析風格-精簡版</span></p>
+<p class="p4"><span class="s1">                                &lt;/</span><span class="s4">button</span><span class="s1">&gt;</span></p>
+<p class="p4"><span class="s1">                            &lt;/</span><span class="s4">div</span><span class="s1">&gt;</span></p>
+<p class="p4"><span class="s1">                        &lt;/</span><span class="s4">div</span><span class="s1">&gt;</span></p>
+<p class="p4"><span class="s1">                    &lt;/</span><span class="s4">div</span><span class="s1">&gt;</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">                    </span><span class="s8">&lt;!-- Title Input --&gt;</span></p>
+<p class="p4"><span class="s1">                    &lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s2">class</span><span class="s1">=</span><span class="s5">"mb-3"</span><span class="s1">&gt;</span></p>
+<p class="p2"><span class="s3">                        &lt;</span><span class="s4">h3</span><span class="s3"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-[10px] font-bold text-gray-400 uppercase tracking-tight mb-1 leading-none"</span><span class="s3">&gt;0. 封面標題&lt;/</span><span class="s4">h3</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s3">                        &lt;</span><span class="s4">input</span><span class="s3"> </span><span class="s2">type</span><span class="s3">=</span><span class="s1">"text"</span><span class="s3"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"title-input"</span><span class="s3"> </span><span class="s2">placeholder</span><span class="s3">=</span><span class="s1">"輸入標題..."</span><span class="s3"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"w-full px-2 py-1 rounded border border-orange-200 bg-orange-50 text-[10px] outline-none focus:border-indigo-500 focus:bg-white transition-all shadow-inner"</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s1">                    &lt;/</span><span class="s4">div</span><span class="s1">&gt;</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p7"><span class="s3">                    </span><span class="s1">&lt;!-- Clear Selections --&gt;</span></p>
+<p class="p4"><span class="s1">                    &lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s2">class</span><span class="s1">=</span><span class="s5">"mb-4 pt-1"</span><span class="s1">&gt;</span></p>
+<p class="p2"><span class="s3">                        &lt;</span><span class="s4">button</span><span class="s3"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"clear-selections-btn"</span><span class="s3"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"w-full text-[10px] font-bold bg-orange-500 hover:bg-orange-600 text-white py-1.5 rounded transition-all active:scale-[0.98] flex items-center justify-center gap-2 shadow-sm uppercase tracking-wider"</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s1">                            &lt;</span><span class="s4">i</span><span class="s1"> </span><span class="s2">data-lucide</span><span class="s1">=</span><span class="s5">"rotate-ccw"</span><span class="s1"> </span><span class="s2">class</span><span class="s1">=</span><span class="s5">"w-3 h-3"</span><span class="s1">&gt;&lt;/</span><span class="s4">i</span><span class="s1">&gt; 一鍵取消選取按鈕</span></p>
+<p class="p4"><span class="s1">                        &lt;/</span><span class="s4">button</span><span class="s1">&gt;</span></p>
+<p class="p4"><span class="s1">                    &lt;/</span><span class="s4">div</span><span class="s1">&gt;</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p7"><span class="s3">                    </span><span class="s1">&lt;!-- Dynamic Selection Groups will be injected here --&gt;</span></p>
+<p class="p2"><span class="s3">                    &lt;</span><span class="s4">div</span><span class="s3"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"selection-groups-container"</span><span class="s3">&gt;&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s1">                   </span></p>
+<p class="p7"><span class="s3">                    </span><span class="s1">&lt;!-- Custom Notes --&gt;</span></p>
+<p class="p2"><span class="s3">                    &lt;</span><span class="s4">div</span><span class="s3"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"mt-1 pt-2 border-t border-slate-100"</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s3">                        &lt;</span><span class="s4">h3</span><span class="s3"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-[10px] font-bold text-gray-400 uppercase mb-1 leading-none"</span><span class="s3">&gt;8. 其他備註 (AI 分析結果也會填入此處)&lt;/</span><span class="s4">h3</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s3">                        &lt;</span><span class="s4">textarea</span><span class="s3"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"custom-notes-input"</span><span class="s3"> </span><span class="s2">placeholder</span><span class="s3">=</span><span class="s1">"在此輸入自訂要求或額外細節備註..."</span><span class="s3"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"w-full h-24 p-2 rounded border border-slate-100 bg-slate-50 text-[10px] outline-none focus:border-indigo-500 focus:bg-white transition-all resize-none shadow-inner"</span><span class="s3">&gt;&lt;/</span><span class="s4">textarea</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s1">                    &lt;/</span><span class="s4">div</span><span class="s1">&gt;</span></p>
+<p class="p4"><span class="s1">                &lt;/</span><span class="s4">div</span><span class="s1">&gt;</span></p>
+<p class="p4"><span class="s1">            &lt;/</span><span class="s4">div</span><span class="s1">&gt;</span></p>
+<p class="p4"><span class="s1">        &lt;/</span><span class="s4">div</span><span class="s1">&gt;</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p7"><span class="s3">        </span><span class="s1">&lt;!-- Resizer --&gt;</span></p>
+<p class="p2"><span class="s3">        &lt;</span><span class="s4">div</span><span class="s3"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"resizer"</span><span class="s3"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"w-1.5 h-full cursor-col-resize transition-colors flex items-center justify-center shrink-0 bg-slate-200 group"</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s3">            &lt;</span><span class="s4">div</span><span class="s3"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"w-[1px] h-16 bg-slate-400 group-hover:bg-white rounded-full"</span><span class="s3">&gt;&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s1">        &lt;/</span><span class="s4">div</span><span class="s1">&gt;</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p7"><span class="s3">        </span><span class="s1">&lt;!-- Right Panel: Output --&gt;</span></p>
+<p class="p2"><span class="s3">        &lt;</span><span class="s4">div</span><span class="s3"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"right-panel"</span><span class="s3"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"h-full flex-1 min-w-0 flex flex-col border border-slate-800 rounded-r-lg shadow-xl bg-slate-900"</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s3">            &lt;</span><span class="s4">div</span><span class="s3"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"px-3 py-1.5 bg-slate-800 flex justify-between items-center border-b border-slate-700 shrink-0"</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s3">                &lt;</span><span class="s4">span</span><span class="s3"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-[10px] text-slate-400 font-mono tracking-widest uppercase"</span><span class="s3">&gt;Prompt Output&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s3">                &lt;</span><span class="s4">button</span><span class="s3"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"copy-btn"</span><span class="s3"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-[10px] font-bold bg-indigo-600 hover:bg-indigo-500 text-white px-3 py-1 rounded transition-all active:scale-95 shadow-md uppercase"</span><span class="s3">&gt;Copy&lt;/</span><span class="s4">button</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s1">            &lt;/</span><span class="s4">div</span><span class="s1">&gt;</span></p>
+<p class="p2"><span class="s3">            &lt;</span><span class="s4">div</span><span class="s3"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"p-4 overflow-y-auto flex-grow font-mono text-[11px] text-indigo-100/90 leading-tight scrollbar-thin dark-scrollbar"</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s3">                &lt;</span><span class="s4">pre</span><span class="s3"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"prompt-output"</span><span class="s3"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"whitespace-pre-wrap"</span><span class="s3">&gt;&lt;/</span><span class="s4">pre</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s1">            &lt;/</span><span class="s4">div</span><span class="s1">&gt;</span></p>
+<p class="p4"><span class="s1">        &lt;/</span><span class="s4">div</span><span class="s1">&gt;</span></p>
+<p class="p4"><span class="s1">    &lt;/</span><span class="s4">main</span><span class="s1">&gt;</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p7"><span class="s3">    </span><span class="s1">&lt;!-- Firebase Scripts --&gt;</span></p>
+<p class="p2"><span class="s3">    &lt;</span><span class="s4">script</span><span class="s3"> </span><span class="s2">type</span><span class="s3">=</span><span class="s1">"module"</span><span class="s3">&gt;</span></p>
+<p class="p8"><span class="s3">        </span><span class="s9">import</span><span class="s3"> { initializeApp } </span><span class="s9">from</span><span class="s3"> </span><span class="s1">"https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js"</span><span class="s3">;</span></p>
+<p class="p4"><span class="s1">        </span><span class="s9">import</span><span class="s1"> { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } </span><span class="s9">from</span><span class="s1"> </span><span class="s10">"https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js"</span><span class="s1">;</span></p>
+<p class="p8"><span class="s3">        </span><span class="s9">import</span><span class="s3"> { getFirestore, doc, setDoc, getDoc } </span><span class="s9">from</span><span class="s3"> </span><span class="s1">"https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js"</span><span class="s3">;</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p7"><span class="s3">        </span><span class="s1">// --- Config Data ---</span></p>
+<p class="p9"><span class="s3">        </span><span class="s9">const</span><span class="s3"> </span><span class="s1">INITIAL_CONFIG</span><span class="s3"> = {</span></p>
+<p class="p4"><span class="s1">            roles: [</span></p>
+<p class="p4"><span class="s1">                { id: </span><span class="s10">'designer'</span><span class="s1">, label: </span><span class="s10">'簡報設計師'</span><span class="s1">, prompt: </span><span class="s10">'你是一位精通資訊圖表與視覺傳達的設計大師。'</span><span class="s1"> },</span></p>
+<p class="p4"><span class="s1">                { id: </span><span class="s10">'expert'</span><span class="s1">, label: </span><span class="s10">'領域專家'</span><span class="s1">, prompt: </span><span class="s10">'你是一位具有多年經驗的行業專家。'</span><span class="s1"> },</span></p>
+<p class="p8"><span class="s3">                { id: </span><span class="s1">'storyteller'</span><span class="s3">, label: </span><span class="s1">'說故事高手'</span><span class="s3">, prompt: </span><span class="s1">'你是一位擅長將複雜概念轉化為動人故事的作家。'</span><span class="s3"> },</span></p>
+<p class="p4"><span class="s1">                { id: </span><span class="s10">'teacher'</span><span class="s1">, label: </span><span class="s10">'科普老師'</span><span class="s1">, prompt: </span><span class="s10">'你是一位擅長用淺顯易懂語言教學的國小老師。'</span><span class="s1"> },</span></p>
+<p class="p8"><span class="s3">                { id: </span><span class="s1">'youtuber'</span><span class="s3">, label: </span><span class="s1">'內容創作者'</span><span class="s3">, prompt: </span><span class="s1">'你是一位知名的 YouTuber，擅長製作高點擊率的知識型影片。'</span><span class="s3"> },</span></p>
+<p class="p8"><span class="s3">                { id: </span><span class="s1">'analyst'</span><span class="s3">, label: </span><span class="s1">'數據分析師'</span><span class="s3">, prompt: </span><span class="s1">'你是一位嚴謹的數據分析師，擅長從混亂的資料中找出關鍵趨勢。'</span><span class="s3"> },</span></p>
+<p class="p4"><span class="s1">                { id: </span><span class="s10">'marketer'</span><span class="s1">, label: </span><span class="s10">'行銷策略師'</span><span class="s1">, prompt: </span><span class="s10">'你是一位敏銳的行銷策略師，擅長抓住受眾痛點。'</span><span class="s1"> },</span></p>
+<p class="p4"><span class="s1">            ],</span></p>
+<p class="p4"><span class="s1">            infographics: [</span></p>
+<p class="p8"><span class="s3">                { id: </span><span class="s1">'i1'</span><span class="s3">, label: </span><span class="s1">'懶人包 1'</span><span class="s3">, prompt: </span><span class="s1">'生成一個高品質的抽象背景簡報，使用深藍色和金屬金色漸層作為主色調，融入微妙的幾何箭頭紋理來增加視覺深度，添加磨砂玻璃覆蓋層以營造半透明的現代感，右側設計深負空間來平衡布局，提供電影般的燈光效果，包括柔和的陰影 and 高光，讓整體呈現時尚企業美學，支持 8K 解析度，採用最小主義設計原則，避免過多元素，每張幻燈片保持乾淨簡潔，比例為 16:9，適合橫向投影，並確保文字與圖形完美對齊。'</span><span class="s3"> },</span></p>
+<p class="p4"><span class="s1">                { id: </span><span class="s10">'i2'</span><span class="s1">, label: </span><span class="s10">'懶人包 2'</span><span class="s1">, prompt: </span><span class="s10">'改這邊改這邊，不要換行'</span><span class="s1"> },</span></p>
+<p class="p4"><span class="s1">                { id: </span><span class="s10">'i3'</span><span class="s1">, label: </span><span class="s10">'懶人包 3'</span><span class="s1">, prompt: </span><span class="s10">'改這邊改這邊，不要換行'</span><span class="s1"> },</span></p>
+<p class="p4"><span class="s1">                { id: </span><span class="s10">'i4'</span><span class="s1">, label: </span><span class="s10">'懶人包 4'</span><span class="s1">, prompt: </span><span class="s10">'改這邊改這邊，不要換行'</span><span class="s1"> },</span></p>
+<p class="p4"><span class="s1">                { id: </span><span class="s10">'i5'</span><span class="s1">, label: </span><span class="s10">'懶人包 5'</span><span class="s1">, prompt: </span><span class="s10">'改這邊改這邊，不要換行'</span><span class="s1"> },</span></p>
+<p class="p4"><span class="s1">                { id: </span><span class="s10">'i6'</span><span class="s1">, label: </span><span class="s10">'懶人包 6'</span><span class="s1">, prompt: </span><span class="s10">'改這邊改這邊，不要換行'</span><span class="s1"> },</span></p>
+<p class="p4"><span class="s1">                { id: </span><span class="s10">'i7'</span><span class="s1">, label: </span><span class="s10">'懶人包 7'</span><span class="s1">, prompt: </span><span class="s10">'改這邊改這邊，不要換行'</span><span class="s1"> },</span></p>
+<p class="p4"><span class="s1">            ],</span></p>
+<p class="p4"><span class="s1">            visual_styles: [</span></p>
+<p class="p8"><span class="s3">                { id: </span><span class="s1">'hand-drawn'</span><span class="s3">, label: </span><span class="s1">'手繪塗鴉'</span><span class="s3">, prompt: </span><span class="s1">'視覺風格：手繪塗鴉風。使用具備質感的筆記本紙張作為背景（如方格或橫線紙），所有元素、插圖與文字呈現自然的手寫筆觸，線條帶有隨性且不完全筆直的特性，色彩活潑，營造溫暖且具備個人筆記感的視覺體驗。'</span><span class="s3"> },</span></p>
+<p class="p8"><span class="s3">                { id: </span><span class="s1">'high-key'</span><span class="s3">, label: </span><span class="s1">'高調攝影'</span><span class="s3">, prompt: </span><span class="s1">'視覺風格：高品質攝影，無邊框。使用「高調攝影 (High-key Photography)」作為背景，模擬明亮的自然光與柔和陰影。整體視覺極度輕盈，拒絕廉價的扁平化向量圖。'</span><span class="s3"> },</span></p>
+<p class="p8"><span class="s3">                { id: </span><span class="s1">'modern-min'</span><span class="s3">, label: </span><span class="s1">'現代簡約'</span><span class="s3">, prompt: </span><span class="s1">'視覺風格：現代簡約。強調大量留白、細緻文字排版，追求極致乾淨。'</span><span class="s3"> },</span></p>
+<p class="p8"><span class="s3">                { id: </span><span class="s1">'apple-style'</span><span class="s3">, label: </span><span class="s1">'蘋果風格'</span><span class="s3">, prompt: </span><span class="s1">'視覺風格：蘋果風格。使用高質感產品展示照、優雅的漸層背景與精緻的工藝感。'</span><span class="s3"> },</span></p>
+<p class="p8"><span class="s3">                { id: </span><span class="s1">'dark-business'</span><span class="s3">, label: </span><span class="s1">'深色商務'</span><span class="s3">, prompt: </span><span class="s1">'視覺風格：深色商務。以深藍或純黑作為基底，搭配具備金屬質感的邊框與元素。'</span><span class="s3"> },</span></p>
+<p class="p8"><span class="s3">                { id: </span><span class="s1">'tech-future'</span><span class="s3">, label: </span><span class="s1">'科技未來'</span><span class="s3">, prompt: </span><span class="s1">'視覺風格：科技未來感。融入螢光線條、數據圖表感元素以及全息投影視覺。'</span><span class="s3"> },</span></p>
+<p class="p8"><span class="s3">                { id: </span><span class="s1">'creative-active'</span><span class="s3">, label: </span><span class="s1">'創意活潑'</span><span class="s3">, prompt: </span><span class="s1">'視覺風格：創意活潑。採用大膽配色與趣味插圖，營造動態且具吸引力的氛圍。'</span><span class="s3"> },</span></p>
+<p class="p8"><span class="s3">                { id: </span><span class="s1">'academic-pro'</span><span class="s3">, label: </span><span class="s1">'學術專業'</span><span class="s3">, prompt: </span><span class="s1">'視覺風格：學術專業。條理分明、層次清晰，採用經典襯線體 (Serif) 呈現權威感。'</span><span class="s3"> },</span></p>
+<p class="p8"><span class="s3">                { id: </span><span class="s1">'retro-news'</span><span class="s3">, label: </span><span class="s1">'復古懷舊'</span><span class="s3">, prompt: </span><span class="s1">'視覺風格：復古懷舊。低飽和度色調、仿舊報紙質感，營造歷史厚度感。'</span><span class="s3"> },</span></p>
+<p class="p4"><span class="s1">            ],</span></p>
+<p class="p4"><span class="s1">            tones: [</span></p>
+<p class="p8"><span class="s3">                { id: </span><span class="s1">'inspirational'</span><span class="s3">, label: </span><span class="s1">'專業啟發'</span><span class="s3">, prompt: </span><span class="s1">'溝通語氣：文字應具備專業度，同時充滿啟發性，引發讀者思考。'</span><span class="s3"> },</span></p>
+<p class="p8"><span class="s3">                { id: </span><span class="s1">'academic'</span><span class="s3">, label: </span><span class="s1">'嚴謹學術'</span><span class="s3">, prompt: </span><span class="s1">'溝通語氣：採用嚴謹、學術化的語法，確保論述具有高度可信度。'</span><span class="s3"> },</span></p>
+<p class="p8"><span class="s3">                { id: </span><span class="s1">'creative-vibe'</span><span class="s3">, label: </span><span class="s1">'活潑創意'</span><span class="s3">, prompt: </span><span class="s1">'溝通語氣：活潑且充滿創意，打破常規，使用生動的表達方式。'</span><span class="s3"> },</span></p>
+<p class="p8"><span class="s3">                { id: </span><span class="s1">'minimal-text'</span><span class="s3">, label: </span><span class="s1">'簡約精煉'</span><span class="s3">, prompt: </span><span class="s1">'溝通語氣：極致簡約，去除冗言贅字，僅保留核心精華資訊。'</span><span class="s3"> },</span></p>
+<p class="p8"><span class="s3">                { id: </span><span class="s1">'persuasive'</span><span class="s3">, label: </span><span class="s1">'說服力強'</span><span class="s3">, prompt: </span><span class="s1">'溝通語氣：強調說服力，邏輯層層遞進，旨在轉化或打動受眾。'</span><span class="s3"> },</span></p>
+<p class="p8"><span class="s3">                { id: </span><span class="s1">'narrative'</span><span class="s3">, label: </span><span class="s1">'故事敘述'</span><span class="s3">, prompt: </span><span class="s1">'溝通語氣：採用故事敘述感，將資訊融入情節中，增加沉浸體驗。'</span><span class="s3"> },</span></p>
+<p class="p4"><span class="s1">            ],</span></p>
+<p class="p4"><span class="s1">            audiences: [</span></p>
+<p class="p4"><span class="s1">                { id: </span><span class="s10">'general'</span><span class="s1">, label: </span><span class="s10">'一般大眾'</span><span class="s1">, prompt: </span><span class="s10">'目標受眾：一般大眾。不預設專業背景，使用通用語境。'</span><span class="s1"> },</span></p>
+<p class="p4"><span class="s1">                { id: </span><span class="s10">'executives'</span><span class="s1">, label: </span><span class="s10">'公司高層'</span><span class="s1">, prompt: </span><span class="s10">'目標受眾：公司高層。僅呈現核心決策價值與結論。'</span><span class="s1"> },</span></p>
+<p class="p4"><span class="s1">                { id: </span><span class="s10">'clients'</span><span class="s1">, label: </span><span class="s10">'潛在客戶'</span><span class="s1">, prompt: </span><span class="s10">'目標受眾：潛在客戶。專注於痛點解決與產品優勢。'</span><span class="s1"> },</span></p>
+<p class="p4"><span class="s1">                { id: </span><span class="s10">'students'</span><span class="s1">, label: </span><span class="s10">'學生'</span><span class="s1">, prompt: </span><span class="s10">'目標受眾：學生。使用淺顯易懂的邏輯與教育引導。'</span><span class="s1"> },</span></p>
+<p class="p8"><span class="s3">                { id: </span><span class="s1">'social-media'</span><span class="s3">, label: </span><span class="s1">'社群媒體'</span><span class="s3">, prompt: </span><span class="s1">'目標受眾：社群媒體讀者。強調視覺衝擊與短平快的資訊點。'</span><span class="s3"> },</span></p>
+<p class="p8"><span class="s3">                { id: </span><span class="s1">'developers'</span><span class="s3">, label: </span><span class="s1">'技術開發'</span><span class="s3">, prompt: </span><span class="s1">'目標受眾：技術開發者。提供詳細架構、代碼邏輯與實現細節。'</span><span class="s3"> },</span></p>
+<p class="p8"><span class="s3">                { id: </span><span class="s1">'investors'</span><span class="s3">, label: </span><span class="s1">'投資人'</span><span class="s3">, prompt: </span><span class="s1">'目標受眾：投資人。側重市場潛力、商業模式與風險分析。'</span><span class="s3"> },</span></p>
+<p class="p4"><span class="s1">            ],</span></p>
+<p class="p4"><span class="s1">            colors: [</span></p>
+<p class="p8"><span class="s3">                { id: </span><span class="s1">'warm-beige'</span><span class="s3">, label: </span><span class="s1">'暖白米色'</span><span class="s3">, swatches: [</span><span class="s1">'#FFFFFF'</span><span class="s3">, </span><span class="s1">'#F5F5DC'</span><span class="s3">, </span><span class="s1">'#D2B48C'</span><span class="s3">], prompt: </span><span class="s1">'配色方案：採用暖白、淺木色或米色作為主色調，風格溫馨且優雅。'</span><span class="s3"> },</span></p>
+<p class="p4"><span class="s1">                { id: </span><span class="s10">'pro-navy'</span><span class="s1">, label: </span><span class="s10">'專業深藍'</span><span class="s1">, swatches: [</span><span class="s10">'#0D1B2A'</span><span class="s1">, </span><span class="s10">'#1B263B'</span><span class="s1">, </span><span class="s10">'#E0E1DD'</span><span class="s1">], prompt: </span><span class="s10">'配色方案：深海軍藍搭配石板灰。'</span><span class="s1"> },</span></p>
+<p class="p8"><span class="s3">                { id: </span><span class="s1">'office-blue'</span><span class="s3">, label: </span><span class="s1">'Word 藍'</span><span class="s3">, swatches: [</span><span class="s1">'#2B579A'</span><span class="s3">, </span><span class="s1">'#FFFFFF'</span><span class="s3">, </span><span class="s1">'#D9E1F2'</span><span class="s3">], prompt: </span><span class="s1">'配色方案：經典深藍與純白組合。'</span><span class="s3"> },</span></p>
+<p class="p8"><span class="s3">                { id: </span><span class="s1">'office-orange'</span><span class="s3">, label: </span><span class="s1">'PPT 橘'</span><span class="s3">, swatches: [</span><span class="s1">'#B7472A'</span><span class="s3">, </span><span class="s1">'#FFFFFF'</span><span class="s3">, </span><span class="s1">'#FFF2CC'</span><span class="s3">], prompt: </span><span class="s1">'配色方案：暖橘與深紅。'</span><span class="s3"> },</span></p>
+<p class="p8"><span class="s3">                { id: </span><span class="s1">'luxury-gold'</span><span class="s3">, label: </span><span class="s1">'奢華黑金'</span><span class="s3">, swatches: [</span><span class="s1">'#000000'</span><span class="s3">, </span><span class="s1">'#D4AF37'</span><span class="s3">, </span><span class="s1">'#1A1A1A'</span><span class="s3">], prompt: </span><span class="s1">'配色方案：純黑背景搭配磨砂金。'</span><span class="s3"> },</span></p>
+<p class="p4"><span class="s1">                { id: </span><span class="s10">'morandi'</span><span class="s1">, label: </span><span class="s10">'莫蘭迪色'</span><span class="s1">, swatches: [</span><span class="s10">'#9A8C98'</span><span class="s1">, </span><span class="s10">'#C9ADA7'</span><span class="s1">, </span><span class="s10">'#F2E9E4'</span><span class="s1">], prompt: </span><span class="s10">'配色方案：低飽和度灰階色調。'</span><span class="s1"> },</span></p>
+<p class="p8"><span class="s3">                { id: </span><span class="s1">'apple-white'</span><span class="s3">, label: </span><span class="s1">'純淨科技'</span><span class="s3">, swatches: [</span><span class="s1">'#FFFFFF'</span><span class="s3">, </span><span class="s1">'#F2F2F7'</span><span class="s3">, </span><span class="s1">'#007AFF'</span><span class="s3">], prompt: </span><span class="s1">'配色方案：極簡白背景搭配系統藍。'</span><span class="s3"> },</span></p>
+<p class="p8"><span class="s3">                { id: </span><span class="s1">'cyberpunk'</span><span class="s3">, label: </span><span class="s1">'賽博龐克'</span><span class="s3">, swatches: [</span><span class="s1">'#000000'</span><span class="s3">, </span><span class="s1">'#FF00FF'</span><span class="s3">, </span><span class="s1">'#00FFFF'</span><span class="s3">], prompt: </span><span class="s1">'配色方案：純黑背景搭配螢光紫青。'</span><span class="s3"> },</span></p>
+<p class="p4"><span class="s1">            ],</span></p>
+<p class="p4"><span class="s1">            notes: [</span></p>
+<p class="p8"><span class="s3">                { id: </span><span class="s1">'center-focus'</span><span class="s3">, label: </span><span class="s1">'中心對焦'</span><span class="s3">, prompt: </span><span class="s1">'結構設計：採用「中心對焦」版型。將最核心的主題或關鍵圖案放置於畫面正中央，周圍輔以簡潔的放射狀或對稱排列的資訊，確保視覺焦點第一時間鎖定在核心資訊上。'</span><span class="s3"> },</span></p>
+<p class="p8"><span class="s3">                { id: </span><span class="s1">'glass-container'</span><span class="s3">, label: </span><span class="s1">'磨砂玻璃'</span><span class="s3">, prompt: </span><span class="s1">'資訊承載於半透明白色磨砂玻璃容器中，確保圖文分離且視覺輕盈。'</span><span class="s3"> },</span></p>
+<p class="p8"><span class="s3">                { id: </span><span class="s1">'3-sec-rule'</span><span class="s3">, label: </span><span class="s1">'3秒注意力'</span><span class="s3">, prompt: </span><span class="s1">'文字極致精練，字體加大，確保在 3 秒內抓住觀眾注意力。'</span><span class="s3"> },</span></p>
+<p class="p4"><span class="s1">                { id: </span><span class="s10">'clean-text'</span><span class="s1">, label: </span><span class="s10">'圖文分離'</span><span class="s1">, prompt: </span><span class="s10">'文字務必清晰，圖文分離。'</span><span class="s1"> },</span></p>
+<p class="p4"><span class="s1">                { id: </span><span class="s10">'lighting'</span><span class="s1">, label: </span><span class="s10">'光影層次'</span><span class="s1">, prompt: </span><span class="s10">'背景必須展現高品質的光影層次，避免平面感。'</span><span class="s1"> },</span></p>
+<p class="p4"><span class="s1">                { id: </span><span class="s10">'high-res'</span><span class="s1">, label: </span><span class="s10">'超高畫質'</span><span class="s1">, prompt: </span><span class="s10">'確保細節達到 8K 解析度標準。'</span><span class="s1"> },</span></p>
+<p class="p4"><span class="s1">            ]</span></p>
+<p class="p4"><span class="s1">        };</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">        </span><span class="s9">const</span><span class="s1"> apiKey = </span><span class="s10">""</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">        </span><span class="s9">const</span><span class="s1"> firebaseConfig = </span><span class="s11">JSON</span><span class="s1">.parse(__firebase_config);</span></p>
+<p class="p4"><span class="s1">        </span><span class="s9">const</span><span class="s1"> app = initializeApp(firebaseConfig);</span></p>
+<p class="p4"><span class="s1">        </span><span class="s9">const</span><span class="s1"> auth = getAuth(app);</span></p>
+<p class="p4"><span class="s1">        </span><span class="s9">const</span><span class="s1"> db = getFirestore(app);</span></p>
+<p class="p4"><span class="s1">        </span><span class="s9">const</span><span class="s1"> appId = </span><span class="s9">typeof</span><span class="s1"> __app_id !== </span><span class="s10">'undefined'</span><span class="s1"> ? __app_id : </span><span class="s10">'default-app-id'</span><span class="s1">;</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p7"><span class="s3">        </span><span class="s1">// --- Application State ---</span></p>
+<p class="p4"><span class="s1">        </span><span class="s9">let</span><span class="s1"> user = </span><span class="s9">null</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">        </span><span class="s9">let</span><span class="s1"> selections = {</span></p>
+<p class="p4"><span class="s1">            role: </span><span class="s11">INITIAL_CONFIG</span><span class="s1">.roles[</span><span class="s12">0</span><span class="s1">],</span></p>
+<p class="p4"><span class="s1">            infographic: </span><span class="s9">null</span><span class="s1">,</span></p>
+<p class="p4"><span class="s1">            visual_style: </span><span class="s11">INITIAL_CONFIG</span><span class="s1">.visual_styles[</span><span class="s12">0</span><span class="s1">],</span></p>
+<p class="p4"><span class="s1">            tone: </span><span class="s11">INITIAL_CONFIG</span><span class="s1">.tones[</span><span class="s12">0</span><span class="s1">],</span></p>
+<p class="p4"><span class="s1">            audience: </span><span class="s11">INITIAL_CONFIG</span><span class="s1">.audiences[</span><span class="s12">0</span><span class="s1">],</span></p>
+<p class="p4"><span class="s1">            color: </span><span class="s11">INITIAL_CONFIG</span><span class="s1">.colors[</span><span class="s12">0</span><span class="s1">],</span></p>
+<p class="p4"><span class="s1">            notes: [</span><span class="s11">INITIAL_CONFIG</span><span class="s1">.notes[</span><span class="s12">1</span><span class="s1">], </span><span class="s11">INITIAL_CONFIG</span><span class="s1">.notes[</span><span class="s12">2</span><span class="s1">], </span><span class="s11">INITIAL_CONFIG</span><span class="s1">.notes[</span><span class="s12">5</span><span class="s1">]],</span></p>
+<p class="p4"><span class="s1">        };</span></p>
+<p class="p4"><span class="s1">        </span><span class="s9">let</span><span class="s1"> title = </span><span class="s10">''</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">        </span><span class="s9">let</span><span class="s1"> customNotes = </span><span class="s10">''</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">        </span><span class="s9">let</span><span class="s1"> analyzing = </span><span class="s9">false</span><span class="s1">;</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p7"><span class="s3">        </span><span class="s1">// --- DOM Elements ---</span></p>
+<p class="p4"><span class="s1">        </span><span class="s9">const</span><span class="s1"> selectionGroupsContainer = document.getElementById(</span><span class="s10">'selection-groups-container'</span><span class="s1">);</span></p>
+<p class="p4"><span class="s1">        </span><span class="s9">const</span><span class="s1"> titleInput = document.getElementById(</span><span class="s10">'title-input'</span><span class="s1">);</span></p>
+<p class="p4"><span class="s1">        </span><span class="s9">const</span><span class="s1"> customNotesInput = document.getElementById(</span><span class="s10">'custom-notes-input'</span><span class="s1">);</span></p>
+<p class="p4"><span class="s1">        </span><span class="s9">const</span><span class="s1"> promptOutput = document.getElementById(</span><span class="s10">'prompt-output'</span><span class="s1">);</span></p>
+<p class="p4"><span class="s1">        </span><span class="s9">const</span><span class="s1"> copyBtn = document.getElementById(</span><span class="s10">'copy-btn'</span><span class="s1">);</span></p>
+<p class="p4"><span class="s1">        </span><span class="s9">const</span><span class="s1"> fileInput = document.getElementById(</span><span class="s10">'file-input'</span><span class="s1">);</span></p>
+<p class="p4"><span class="s1">        </span><span class="s9">const</span><span class="s1"> fileDisplay = document.getElementById(</span><span class="s10">'file-display'</span><span class="s1">);</span></p>
+<p class="p4"><span class="s1">        </span><span class="s9">const</span><span class="s1"> analyzeDetailedBtn = document.getElementById(</span><span class="s10">'analyze-detailed'</span><span class="s1">);</span></p>
+<p class="p4"><span class="s1">        </span><span class="s9">const</span><span class="s1"> analyzeConciseBtn = document.getElementById(</span><span class="s10">'analyze-concise'</span><span class="s1">);</span></p>
+<p class="p4"><span class="s1">        </span><span class="s9">const</span><span class="s1"> resetAllBtn = document.getElementById(</span><span class="s10">'reset-all-btn'</span><span class="s1">);</span></p>
+<p class="p4"><span class="s1">        </span><span class="s9">const</span><span class="s1"> clearSelectionsBtn = document.getElementById(</span><span class="s10">'clear-selections-btn'</span><span class="s1">);</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p7"><span class="s3">        </span><span class="s1">// --- Functions ---</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">        </span><span class="s9">const</span><span class="s1"> buildPrompt = () =&gt; {</span></p>
+<p class="p4"><span class="s1">            </span><span class="s9">const</span><span class="s1"> buildSection = (titleLabel, categoryKey) =&gt; {</span></p>
+<p class="p4"><span class="s1">                </span><span class="s9">const</span><span class="s1"> stateKey = categoryKey.replace(</span><span class="s4">/s$/</span><span class="s1">, </span><span class="s10">''</span><span class="s1">);</span></p>
+<p class="p4"><span class="s1">                </span><span class="s9">const</span><span class="s1"> selection = selections[stateKey];</span></p>
+<p class="p4"><span class="s1">                </span><span class="s9">if</span><span class="s1"> (!selection) </span><span class="s9">return</span><span class="s1"> </span><span class="s10">""</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">                </span><span class="s9">return</span><span class="s1"> </span><span class="s10">`\n# </span><span class="s1">${titleLabel}</span><span class="s10">\n</span><span class="s1">${selection.prompt}</span><span class="s10">\n`</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">            };</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">            </span><span class="s9">const</span><span class="s1"> buildNoteSection = () =&gt; {</span></p>
+<p class="p4"><span class="s1">                </span><span class="s9">const</span><span class="s1"> selectedNotes = selections.notes;</span></p>
+<p class="p4"><span class="s1">                </span><span class="s9">if</span><span class="s1"> (!selectedNotes || selectedNotes.length === </span><span class="s12">0</span><span class="s1">) </span><span class="s9">return</span><span class="s1"> </span><span class="s10">""</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">                </span><span class="s9">const</span><span class="s1"> list = selectedNotes.map(n =&gt; </span><span class="s10">`- </span><span class="s1">${n.prompt}</span><span class="s10">`</span><span class="s1">).join(</span><span class="s10">'\n'</span><span class="s1">);</span></p>
+<p class="p4"><span class="s1">                </span><span class="s9">return</span><span class="s1"> </span><span class="s10">`\n# 具體要求\n</span><span class="s1">${list}</span><span class="s10">\n`</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">            };</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">            </span><span class="s9">let</span><span class="s1"> prompt = </span><span class="s10">""</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">            </span><span class="s9">if</span><span class="s1"> (title.trim()) prompt += </span><span class="s10">`# 內容標題\n"</span><span class="s1">${title.trim()}</span><span class="s10">"\n`</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">            </span><span class="s9">if</span><span class="s1"> (selections.role) prompt += buildSection(</span><span class="s10">"角色設定"</span><span class="s1">, </span><span class="s10">"roles"</span><span class="s1">);</span></p>
+<p class="p4"><span class="s1">            </span><span class="s9">if</span><span class="s1"> (selections.infographic) prompt += buildSection(</span><span class="s10">"懶人包樣式"</span><span class="s1">, </span><span class="s10">"infographics"</span><span class="s1">);</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">            </span><span class="s9">if</span><span class="s1"> (selections.visual_style || selections.color) {</span></p>
+<p class="p4"><span class="s1">                prompt += </span><span class="s10">`\n# 視覺與風格\n`</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">                </span><span class="s9">if</span><span class="s1"> (selections.visual_style) prompt += selections.visual_style.prompt + </span><span class="s10">"\n"</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">                </span><span class="s9">if</span><span class="s1"> (selections.color) prompt += selections.color.prompt + </span><span class="s10">"\n"</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">            }</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">            </span><span class="s9">if</span><span class="s1"> (selections.tone || selections.audience) {</span></p>
+<p class="p4"><span class="s1">                prompt += </span><span class="s10">`\n# 策略設定\n`</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">                </span><span class="s9">if</span><span class="s1"> (selections.tone) prompt += selections.tone.prompt + </span><span class="s10">"\n"</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">                </span><span class="s9">if</span><span class="s1"> (selections.audience) prompt += selections.audience.prompt + </span><span class="s10">"\n"</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">            }</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">            </span><span class="s9">if</span><span class="s1"> (customNotes &amp;&amp; customNotes.trim()) {</span></p>
+<p class="p4"><span class="s1">                prompt += </span><span class="s10">`\n# 任務細節與額外備註\n</span><span class="s1">${customNotes.trim()}</span><span class="s10">\n`</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">            }</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">            prompt += buildNoteSection();</span></p>
+<p class="p4"><span class="s1">            promptOutput.textContent = prompt.trim();</span></p>
+<p class="p4"><span class="s1">        };</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">        </span><span class="s9">const</span><span class="s1"> renderSelections = () =&gt; {</span></p>
+<p class="p4"><span class="s1">            selectionGroupsContainer.innerHTML = </span><span class="s10">''</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">           </span></p>
+<p class="p4"><span class="s1">            </span><span class="s9">const</span><span class="s1"> groups = [</span></p>
+<p class="p4"><span class="s1">                { label: </span><span class="s10">"1. 角色"</span><span class="s1">, key: </span><span class="s10">"roles"</span><span class="s1"> },</span></p>
+<p class="p4"><span class="s1">                { label: </span><span class="s10">"2. 懶人包"</span><span class="s1">, key: </span><span class="s10">"infographics"</span><span class="s1"> },</span></p>
+<p class="p4"><span class="s1">                { label: </span><span class="s10">"3. 風格"</span><span class="s1">, key: </span><span class="s10">"visual_styles"</span><span class="s1"> },</span></p>
+<p class="p4"><span class="s1">                { label: </span><span class="s10">"4. 語氣"</span><span class="s1">, key: </span><span class="s10">"tones"</span><span class="s1"> },</span></p>
+<p class="p4"><span class="s1">                { label: </span><span class="s10">"5. 受眾"</span><span class="s1">, key: </span><span class="s10">"audiences"</span><span class="s1"> },</span></p>
+<p class="p4"><span class="s1">                { label: </span><span class="s10">"6. 配色"</span><span class="s1">, key: </span><span class="s10">"colors"</span><span class="s1">, isColor: </span><span class="s9">true</span><span class="s1"> },</span></p>
+<p class="p4"><span class="s1">                { label: </span><span class="s10">"7. 備註"</span><span class="s1">, key: </span><span class="s10">"notes"</span><span class="s1">, isMulti: </span><span class="s9">true</span><span class="s1"> }</span></p>
+<p class="p4"><span class="s1">            ];</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">            groups.forEach(group =&gt; {</span></p>
+<p class="p4"><span class="s1">                </span><span class="s9">const</span><span class="s1"> groupEl = document.createElement(</span><span class="s10">'div'</span><span class="s1">);</span></p>
+<p class="p4"><span class="s1">                groupEl.className = </span><span class="s10">'mb-2 shrink-0'</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">               </span></p>
+<p class="p4"><span class="s1">                </span><span class="s9">const</span><span class="s1"> titleEl = document.createElement(</span><span class="s10">'h3'</span><span class="s1">);</span></p>
+<p class="p8"><span class="s3">                titleEl.className = </span><span class="s1">'text-[10px] font-bold text-gray-400 uppercase tracking-tight mb-1 leading-none'</span><span class="s3">;</span></p>
+<p class="p8"><span class="s3">                titleEl.innerHTML = </span><span class="s1">`</span><span class="s3">${group.label}</span><span class="s1"> </span><span class="s3">${group.isMulti ? </span><span class="s1">'&lt;span class="text-indigo-400 normal-case ml-1 font-normal opacity-70"&gt;(複選)&lt;/span&gt;'</span><span class="s3"> : </span><span class="s1">''</span><span class="s3">}</span><span class="s1">`</span><span class="s3">;</span></p>
+<p class="p4"><span class="s1">                groupEl.appendChild(titleEl);</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">                </span><span class="s9">const</span><span class="s1"> grid = document.createElement(</span><span class="s10">'div'</span><span class="s1">);</span></p>
+<p class="p4"><span class="s1">                grid.className = </span><span class="s10">'grid grid-cols-8 gap-0.5 w-fit'</span><span class="s1">;</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">                </span><span class="s11">INITIAL_CONFIG</span><span class="s1">[group.key].forEach(opt =&gt; {</span></p>
+<p class="p4"><span class="s1">                    </span><span class="s9">const</span><span class="s1"> btn = document.createElement(</span><span class="s10">'button'</span><span class="s1">);</span></p>
+<p class="p4"><span class="s1">                    </span><span class="s9">const</span><span class="s1"> stateKey = group.key.replace(</span><span class="s4">/s$/</span><span class="s1">, </span><span class="s10">''</span><span class="s1">);</span></p>
+<p class="p4"><span class="s1">                    </span><span class="s9">const</span><span class="s1"> isActive = group.isMulti</span></p>
+<p class="p4"><span class="s1">                        ? selections.notes.some(n =&gt; n.id === opt.id)</span></p>
+<p class="p4"><span class="s1">                        : selections[stateKey]?.id === opt.id;</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p8"><span class="s3">                    btn.className = </span><span class="s1">`selection-btn group relative flex flex-col items-center justify-center h-[26px] w-[60px] rounded transition-all text-[10px] text-center border shrink-0 </span><span class="s3">${</span></p>
+<p class="p8"><span class="s3">                        isActive ? </span><span class="s1">'active'</span><span class="s3"> : </span><span class="s1">'border-slate-100 bg-white text-gray-400 hover:border-indigo-200'</span></p>
+<p class="p4"><span class="s1">                    }</span><span class="s10">`</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">                   </span></p>
+<p class="p8"><span class="s3">                    btn.innerHTML = </span><span class="s1">`&lt;div class="truncate w-full px-0.5 leading-tight"&gt;</span><span class="s3">${opt.label}</span><span class="s1">&lt;/div&gt;`</span><span class="s3">;</span></p>
+<p class="p4"><span class="s1">                   </span></p>
+<p class="p4"><span class="s1">                    </span><span class="s9">if</span><span class="s1"> (group.isColor &amp;&amp; opt.swatches) {</span></p>
+<p class="p4"><span class="s1">                        </span><span class="s9">const</span><span class="s1"> swatchContainer = document.createElement(</span><span class="s10">'div'</span><span class="s1">);</span></p>
+<p class="p4"><span class="s1">                        swatchContainer.className = </span><span class="s10">'flex gap-0.5 mt-[1px]'</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">                        opt.swatches.forEach(c =&gt; {</span></p>
+<p class="p4"><span class="s1">                            </span><span class="s9">const</span><span class="s1"> swatch = document.createElement(</span><span class="s10">'div'</span><span class="s1">);</span></p>
+<p class="p4"><span class="s1">                            swatch.className = </span><span class="s10">'w-1.5 h-0.5 border border-black/5'</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">                            swatch.style.backgroundColor = c;</span></p>
+<p class="p4"><span class="s1">                            swatchContainer.appendChild(swatch);</span></p>
+<p class="p4"><span class="s1">                        });</span></p>
+<p class="p4"><span class="s1">                        btn.appendChild(swatchContainer);</span></p>
+<p class="p4"><span class="s1">                    }</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">                    btn.onclick = () =&gt; {</span></p>
+<p class="p4"><span class="s1">                        </span><span class="s9">if</span><span class="s1"> (group.isMulti) {</span></p>
+<p class="p4"><span class="s1">                            </span><span class="s9">const</span><span class="s1"> index = selections.notes.findIndex(n =&gt; n.id === opt.id);</span></p>
+<p class="p4"><span class="s1">                            </span><span class="s9">if</span><span class="s1"> (index &gt; -</span><span class="s12">1</span><span class="s1">) selections.notes.splice(index, </span><span class="s12">1</span><span class="s1">);</span></p>
+<p class="p4"><span class="s1">                            </span><span class="s9">else</span><span class="s1"> selections.notes.push(opt);</span></p>
+<p class="p4"><span class="s1">                        } </span><span class="s9">else</span><span class="s1"> {</span></p>
+<p class="p4"><span class="s1">                            selections[stateKey] = selections[stateKey]?.id === opt.id ? </span><span class="s9">null</span><span class="s1"> : opt;</span></p>
+<p class="p4"><span class="s1">                        }</span></p>
+<p class="p4"><span class="s1">                        renderSelections();</span></p>
+<p class="p4"><span class="s1">                        buildPrompt();</span></p>
+<p class="p4"><span class="s1">                    };</span></p>
+<p class="p4"><span class="s1">                    grid.appendChild(btn);</span></p>
+<p class="p4"><span class="s1">                });</span></p>
+<p class="p4"><span class="s1">                groupEl.appendChild(grid);</span></p>
+<p class="p4"><span class="s1">                selectionGroupsContainer.appendChild(groupEl);</span></p>
+<p class="p4"><span class="s1">            });</span></p>
+<p class="p4"><span class="s1">        };</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">        </span><span class="s9">const</span><span class="s1"> analyzeSlide = </span><span class="s9">async</span><span class="s1"> (mode = </span><span class="s10">'detailed'</span><span class="s1">) =&gt; {</span></p>
+<p class="p4"><span class="s1">            </span><span class="s9">const</span><span class="s1"> file = fileInput.files[</span><span class="s12">0</span><span class="s1">];</span></p>
+<p class="p4"><span class="s1">            </span><span class="s9">if</span><span class="s1"> (!file || analyzing) </span><span class="s9">return</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">           </span></p>
+<p class="p4"><span class="s1">            analyzing = </span><span class="s9">true</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">            analyzeDetailedBtn.disabled = </span><span class="s9">true</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">            analyzeConciseBtn.disabled = </span><span class="s9">true</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">            </span><span class="s9">const</span><span class="s1"> originalDetailedText = analyzeDetailedBtn.innerHTML;</span></p>
+<p class="p4"><span class="s1">            </span><span class="s9">const</span><span class="s1"> originalConciseText = analyzeConciseBtn.innerHTML;</span></p>
+<p class="p4"><span class="s1">           </span></p>
+<p class="p8"><span class="s3">            </span><span class="s9">if</span><span class="s3">(mode === </span><span class="s1">'detailed'</span><span class="s3">) analyzeDetailedBtn.innerHTML = </span><span class="s1">'&lt;i data-lucide="loader-2" class="w-3 h-3 animate-spin"&gt;&lt;/i&gt; 分析中...'</span><span class="s3">;</span></p>
+<p class="p8"><span class="s3">            </span><span class="s9">else</span><span class="s3"> analyzeConciseBtn.innerHTML = </span><span class="s1">'&lt;i data-lucide="loader-2" class="w-3 h-3 animate-spin"&gt;&lt;/i&gt; 分析中...'</span><span class="s3">;</span></p>
+<p class="p4"><span class="s1">            lucide.createIcons();</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">            </span><span class="s9">try</span><span class="s1"> {</span></p>
+<p class="p4"><span class="s1">                </span><span class="s9">const</span><span class="s1"> reader = </span><span class="s9">new</span><span class="s1"> </span><span class="s11">FileReader</span><span class="s1">();</span></p>
+<p class="p4"><span class="s1">                reader.readAsDataURL(file);</span></p>
+<p class="p4"><span class="s1">                reader.onloadend = </span><span class="s9">async</span><span class="s1"> () =&gt; {</span></p>
+<p class="p4"><span class="s1">                    </span><span class="s9">const</span><span class="s1"> base64Data = reader.result.split(</span><span class="s10">','</span><span class="s1">)[</span><span class="s12">1</span><span class="s1">];</span></p>
+<p class="p4"><span class="s1">                    </span><span class="s9">let</span><span class="s1"> prompt = mode === </span><span class="s10">'detailed'</span></p>
+<p class="p8"><span class="s3">                        ? </span><span class="s1">"你是一位專業的視覺分析師。請詳細分析這份 NotebookLM PDF 投影片（或圖片內容）的視覺設計元素，包括配色方案、排版邏輯、字體特點以及整體的視覺氛圍。請以「條列式」的方式呈現分析結果，並將最關鍵的核心重點放在最前面。分析結果應是一段可以用於 AI 內容生成的「提示詞描述」，且必須使用「繁體中文」撰寫。請直接回傳分析後的條列內容，不要有額外的開場白或結論。"</span></p>
+<p class="p8"><span class="s3">                        : </span><span class="s1">"你是一位專業的視覺分析師。請以「極其精煉」且「文字精練」的條列式文字，快速分析這張投影片的風格與排版核心。排除贅字，重點放前面，總字數控制在 100 字以內，並使用「繁體中文」撰寫。請直接回傳核心條列內容。"</span><span class="s3">;</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p8"><span class="s3">                    </span><span class="s9">const</span><span class="s3"> response = </span><span class="s9">await</span><span class="s3"> fetch(</span><span class="s1">`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=</span><span class="s3">${apiKey}</span><span class="s1">`</span><span class="s3">, {</span></p>
+<p class="p4"><span class="s1">                        method: </span><span class="s10">'POST'</span><span class="s1">,</span></p>
+<p class="p4"><span class="s1">                        headers: { </span><span class="s10">'Content-Type'</span><span class="s1">: </span><span class="s10">'application/json'</span><span class="s1"> },</span></p>
+<p class="p4"><span class="s1">                        body: </span><span class="s11">JSON</span><span class="s1">.stringify({</span></p>
+<p class="p4"><span class="s1">                            contents: [{</span></p>
+<p class="p4"><span class="s1">                                parts: [</span></p>
+<p class="p4"><span class="s1">                                    { text: prompt },</span></p>
+<p class="p4"><span class="s1">                                    { inlineData: { mimeType: file.type || </span><span class="s10">'application/pdf'</span><span class="s1">, data: base64Data } }</span></p>
+<p class="p4"><span class="s1">                                ]</span></p>
+<p class="p4"><span class="s1">                            }]</span></p>
+<p class="p4"><span class="s1">                        })</span></p>
+<p class="p4"><span class="s1">                    });</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">                    </span><span class="s9">const</span><span class="s1"> result = </span><span class="s9">await</span><span class="s1"> response.json();</span></p>
+<p class="p4"><span class="s1">                    </span><span class="s9">const</span><span class="s1"> analysisText = result.candidates?.[</span><span class="s12">0</span><span class="s1">]?.content?.parts?.[</span><span class="s12">0</span><span class="s1">]?.text;</span></p>
+<p class="p4"><span class="s1">                    </span><span class="s9">if</span><span class="s1"> (analysisText) {</span></p>
+<p class="p8"><span class="s3">                        </span><span class="s9">const</span><span class="s3"> header = mode === </span><span class="s1">'detailed'</span><span class="s3"> ? </span><span class="s1">"--- AI 分析結果 (詳細版) ---"</span><span class="s3"> : </span><span class="s1">"--- AI 分析結果 (精簡版) ---"</span><span class="s3">;</span></p>
+<p class="p4"><span class="s1">                        customNotes = (customNotes ? customNotes + </span><span class="s10">"\n\n"</span><span class="s1"> : </span><span class="s10">""</span><span class="s1">) + header + </span><span class="s10">"\n"</span><span class="s1"> + analysisText.trim();</span></p>
+<p class="p4"><span class="s1">                        customNotesInput.value = customNotes;</span></p>
+<p class="p4"><span class="s1">                        buildPrompt();</span></p>
+<p class="p4"><span class="s1">                    }</span></p>
+<p class="p4"><span class="s1">                   </span></p>
+<p class="p4"><span class="s1">                    finishAnalysis();</span></p>
+<p class="p4"><span class="s1">                };</span></p>
+<p class="p4"><span class="s1">            } </span><span class="s9">catch</span><span class="s1"> (err) {</span></p>
+<p class="p4"><span class="s1">                console.error(</span><span class="s10">"分析失敗:"</span><span class="s1">, err);</span></p>
+<p class="p4"><span class="s1">                finishAnalysis();</span></p>
+<p class="p4"><span class="s1">            }</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">            </span><span class="s9">function</span><span class="s1"> finishAnalysis() {</span></p>
+<p class="p4"><span class="s1">                analyzing = </span><span class="s9">false</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">                analyzeDetailedBtn.disabled = </span><span class="s9">false</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">                analyzeConciseBtn.disabled = </span><span class="s9">false</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">                analyzeDetailedBtn.innerHTML = originalDetailedText;</span></p>
+<p class="p4"><span class="s1">                analyzeConciseBtn.innerHTML = originalConciseText;</span></p>
+<p class="p4"><span class="s1">                lucide.createIcons();</span></p>
+<p class="p4"><span class="s1">            }</span></p>
+<p class="p4"><span class="s1">        };</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p7"><span class="s3">        </span><span class="s1">// --- Event Listeners ---</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">        titleInput.oninput = (e) =&gt; { title = e.target.value; buildPrompt(); };</span></p>
+<p class="p4"><span class="s1">        customNotesInput.oninput = (e) =&gt; { customNotes = e.target.value; buildPrompt(); };</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">        fileInput.onchange = (e) =&gt; {</span></p>
+<p class="p4"><span class="s1">            </span><span class="s9">const</span><span class="s1"> file = e.target.files[</span><span class="s12">0</span><span class="s1">];</span></p>
+<p class="p4"><span class="s1">            </span><span class="s9">if</span><span class="s1"> (file) {</span></p>
+<p class="p8"><span class="s3">                fileDisplay.innerHTML = </span><span class="s1">`&lt;i data-lucide="file-text" class="w-4 h-4 text-indigo-600"&gt;&lt;/i&gt;&lt;span class="text-[10px] font-bold truncate max-w-[150px] text-indigo-600"&gt;</span><span class="s3">${file.name}</span><span class="s1">&lt;/span&gt;`</span><span class="s3">;</span></p>
+<p class="p8"><span class="s3">                analyzeDetailedBtn.className = </span><span class="s1">"px-3 py-1.5 rounded-md text-[10px] font-bold flex items-center justify-center gap-1.5 transition-all bg-indigo-600 text-white hover:bg-indigo-700 active:scale-95 shadow-md"</span><span class="s3">;</span></p>
+<p class="p8"><span class="s3">                analyzeConciseBtn.className = </span><span class="s1">"px-3 py-1.5 rounded-md text-[10px] font-bold flex items-center justify-center gap-1.5 transition-all bg-slate-800 text-white hover:bg-black active:scale-95 shadow-sm border border-slate-700"</span><span class="s3">;</span></p>
+<p class="p4"><span class="s1">                analyzeDetailedBtn.disabled = </span><span class="s9">false</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">                analyzeConciseBtn.disabled = </span><span class="s9">false</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">            } </span><span class="s9">else</span><span class="s1"> {</span></p>
+<p class="p8"><span class="s3">                fileDisplay.innerHTML = </span><span class="s1">`&lt;i data-lucide="upload" class="w-4 h-4"&gt;&lt;/i&gt;&lt;span class="text-[10px] font-bold"&gt;上傳 NotebookLM PDF 或截圖檔案&lt;/span&gt;`</span><span class="s3">;</span></p>
+<p class="p4"><span class="s1">                analyzeDetailedBtn.disabled = </span><span class="s9">true</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">                analyzeConciseBtn.disabled = </span><span class="s9">true</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">            }</span></p>
+<p class="p4"><span class="s1">            lucide.createIcons();</span></p>
+<p class="p4"><span class="s1">        };</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">        analyzeDetailedBtn.onclick = () =&gt; analyzeSlide(</span><span class="s10">'detailed'</span><span class="s1">);</span></p>
+<p class="p4"><span class="s1">        analyzeConciseBtn.onclick = () =&gt; analyzeSlide(</span><span class="s10">'concise'</span><span class="s1">);</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">        copyBtn.onclick = () =&gt; {</span></p>
+<p class="p4"><span class="s1">            </span><span class="s9">const</span><span class="s1"> el = document.createElement(</span><span class="s10">'textarea'</span><span class="s1">);</span></p>
+<p class="p4"><span class="s1">            el.value = promptOutput.textContent;</span></p>
+<p class="p4"><span class="s1">            document.body.appendChild(el);</span></p>
+<p class="p4"><span class="s1">            el.select();</span></p>
+<p class="p4"><span class="s1">            document.execCommand(</span><span class="s10">'copy'</span><span class="s1">);</span></p>
+<p class="p4"><span class="s1">            document.body.removeChild(el);</span></p>
+<p class="p4"><span class="s1">           </span></p>
+<p class="p4"><span class="s1">            </span><span class="s9">const</span><span class="s1"> originalText = copyBtn.innerText;</span></p>
+<p class="p4"><span class="s1">            copyBtn.innerText = </span><span class="s10">'COPIED'</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">            setTimeout(() =&gt; copyBtn.innerText = originalText, </span><span class="s12">2000</span><span class="s1">);</span></p>
+<p class="p4"><span class="s1">        };</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">        resetAllBtn.onclick = () =&gt; {</span></p>
+<p class="p4"><span class="s1">            title = </span><span class="s10">''</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">            customNotes = </span><span class="s10">''</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">            selections = {</span></p>
+<p class="p4"><span class="s1">                role: </span><span class="s9">null</span><span class="s1">, infographic: </span><span class="s9">null</span><span class="s1">, visual_style: </span><span class="s9">null</span><span class="s1">,</span></p>
+<p class="p4"><span class="s1">                tone: </span><span class="s9">null</span><span class="s1">, audience: </span><span class="s9">null</span><span class="s1">, color: </span><span class="s9">null</span><span class="s1">,</span></p>
+<p class="p4"><span class="s1">                notes: [],</span></p>
+<p class="p4"><span class="s1">            };</span></p>
+<p class="p4"><span class="s1">            titleInput.value = </span><span class="s10">''</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">            customNotesInput.value = </span><span class="s10">''</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">            fileInput.value = </span><span class="s10">''</span><span class="s1">;</span></p>
+<p class="p8"><span class="s3">            fileDisplay.innerHTML = </span><span class="s1">`&lt;i data-lucide="upload" class="w-4 h-4"&gt;&lt;/i&gt;&lt;span class="text-[10px] font-bold"&gt;上傳 NotebookLM PDF 或截圖檔案&lt;/span&gt;`</span><span class="s3">;</span></p>
+<p class="p4"><span class="s1">            analyzeDetailedBtn.disabled = </span><span class="s9">true</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">            analyzeConciseBtn.disabled = </span><span class="s9">true</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">            renderSelections();</span></p>
+<p class="p4"><span class="s1">            buildPrompt();</span></p>
+<p class="p4"><span class="s1">            lucide.createIcons();</span></p>
+<p class="p4"><span class="s1">        };</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">        clearSelectionsBtn.onclick = () =&gt; {</span></p>
+<p class="p4"><span class="s1">            selections = {</span></p>
+<p class="p4"><span class="s1">                role: </span><span class="s9">null</span><span class="s1">, infographic: </span><span class="s9">null</span><span class="s1">, visual_style: </span><span class="s9">null</span><span class="s1">,</span></p>
+<p class="p4"><span class="s1">                tone: </span><span class="s9">null</span><span class="s1">, audience: </span><span class="s9">null</span><span class="s1">, color: </span><span class="s9">null</span><span class="s1">,</span></p>
+<p class="p4"><span class="s1">                notes: [],</span></p>
+<p class="p4"><span class="s1">            };</span></p>
+<p class="p4"><span class="s1">            renderSelections();</span></p>
+<p class="p4"><span class="s1">            buildPrompt();</span></p>
+<p class="p4"><span class="s1">        };</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p7"><span class="s3">        </span><span class="s1">// --- Resizer Logic ---</span></p>
+<p class="p4"><span class="s1">        </span><span class="s9">const</span><span class="s1"> resizer = document.getElementById(</span><span class="s10">'resizer'</span><span class="s1">);</span></p>
+<p class="p4"><span class="s1">        </span><span class="s9">const</span><span class="s1"> leftPanel = document.getElementById(</span><span class="s10">'left-panel'</span><span class="s1">);</span></p>
+<p class="p4"><span class="s1">        </span><span class="s9">const</span><span class="s1"> container = document.getElementById(</span><span class="s10">'container'</span><span class="s1">);</span></p>
+<p class="p4"><span class="s1">        </span><span class="s9">let</span><span class="s1"> isResizing = </span><span class="s9">false</span><span class="s1">;</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">        resizer.onmousedown = (e) =&gt; {</span></p>
+<p class="p4"><span class="s1">            isResizing = </span><span class="s9">true</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">            document.body.style.cursor = </span><span class="s10">'col-resize'</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">            document.body.style.userSelect = </span><span class="s10">'none'</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">        };</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">        document.onmousemove = (e) =&gt; {</span></p>
+<p class="p4"><span class="s1">            </span><span class="s9">if</span><span class="s1"> (!isResizing) </span><span class="s9">return</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">            </span><span class="s9">const</span><span class="s1"> rect = container.getBoundingClientRect();</span></p>
+<p class="p4"><span class="s1">            </span><span class="s9">let</span><span class="s1"> newWidth = ((e.clientX - rect.left) / rect.width) * </span><span class="s12">100</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">            </span><span class="s9">if</span><span class="s1"> (newWidth &gt;= </span><span class="s12">20</span><span class="s1"> &amp;&amp; newWidth &lt;= </span><span class="s12">85</span><span class="s1">) {</span></p>
+<p class="p4"><span class="s1">                leftPanel.style.flexBasis = </span><span class="s10">`</span><span class="s1">${newWidth}</span><span class="s10">%`</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">            }</span></p>
+<p class="p4"><span class="s1">        };</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">        document.onmouseup = () =&gt; {</span></p>
+<p class="p4"><span class="s1">            isResizing = </span><span class="s9">false</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">            document.body.style.cursor = </span><span class="s10">'default'</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">            document.body.style.userSelect = </span><span class="s10">'auto'</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">        };</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p7"><span class="s3">        </span><span class="s1">// --- Auth &amp; Initialize ---</span></p>
+<p class="p4"><span class="s1">        </span><span class="s9">const</span><span class="s1"> init = </span><span class="s9">async</span><span class="s1"> () =&gt; {</span></p>
+<p class="p4"><span class="s1">            </span><span class="s9">if</span><span class="s1"> (</span><span class="s9">typeof</span><span class="s1"> __initial_auth_token !== </span><span class="s10">'undefined'</span><span class="s1"> &amp;&amp; __initial_auth_token) {</span></p>
+<p class="p4"><span class="s1">                </span><span class="s9">await</span><span class="s1"> signInWithCustomToken(auth, __initial_auth_token);</span></p>
+<p class="p4"><span class="s1">            } </span><span class="s9">else</span><span class="s1"> {</span></p>
+<p class="p4"><span class="s1">                </span><span class="s9">await</span><span class="s1"> signInAnonymously(auth);</span></p>
+<p class="p4"><span class="s1">            }</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">            onAuthStateChanged(auth, </span><span class="s9">async</span><span class="s1"> (u) =&gt; {</span></p>
+<p class="p4"><span class="s1">                user = u;</span></p>
+<p class="p4"><span class="s1">                </span><span class="s9">if</span><span class="s1"> (!user) </span><span class="s9">return</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">               </span></p>
+<p class="p7"><span class="s3">                </span><span class="s1">// Load from Firestore</span></p>
+<p class="p4"><span class="s1">                </span><span class="s9">try</span><span class="s1"> {</span></p>
+<p class="p4"><span class="s1">                    </span><span class="s9">const</span><span class="s1"> docRef = doc(db, </span><span class="s10">'artifacts'</span><span class="s1">, appId, </span><span class="s10">'users'</span><span class="s1">, user.uid, </span><span class="s10">'settings'</span><span class="s1">, </span><span class="s10">'config'</span><span class="s1">);</span></p>
+<p class="p4"><span class="s1">                    </span><span class="s9">const</span><span class="s1"> snap = </span><span class="s9">await</span><span class="s1"> getDoc(docRef);</span></p>
+<p class="p4"><span class="s1">                    </span><span class="s9">if</span><span class="s1"> (snap.exists()) {</span></p>
+<p class="p4"><span class="s1">                        </span><span class="s9">const</span><span class="s1"> data = snap.data();</span></p>
+<p class="p4"><span class="s1">                        </span><span class="s9">if</span><span class="s1"> (data.selections) selections = data.selections;</span></p>
+<p class="p4"><span class="s1">                        </span><span class="s9">if</span><span class="s1"> (data.title) { title = data.title; titleInput.value = title; }</span></p>
+<p class="p4"><span class="s1">                        </span><span class="s9">if</span><span class="s1"> (data.customNotes) { customNotes = data.customNotes; customNotesInput.value = customNotes; }</span></p>
+<p class="p4"><span class="s1">                    }</span></p>
+<p class="p4"><span class="s1">                } </span><span class="s9">catch</span><span class="s1"> (e) { console.error(</span><span class="s10">"Load failed"</span><span class="s1">, e); }</span></p>
+<p class="p4"><span class="s1">               </span></p>
+<p class="p4"><span class="s1">                renderSelections();</span></p>
+<p class="p4"><span class="s1">                buildPrompt();</span></p>
+<p class="p4"><span class="s1">                lucide.createIcons();</span></p>
+<p class="p4"><span class="s1">            });</span></p>
+<p class="p4"><span class="s1">        };</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">        init();</span></p>
+<p class="p4"><span class="s1">    &lt;/</span><span class="s4">script</span><span class="s1">&gt;</span></p>
+<p class="p3"><span class="s3">&lt;/</span><span class="s1">body</span><span class="s3">&gt;</span></p>
+<p class="p3"><span class="s3">&lt;/</span><span class="s1">html</span><span class="s3">&gt;</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"></span><br></p>
+</body>
+</html>
